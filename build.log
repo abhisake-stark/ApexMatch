@@ -1,0 +1,4 @@
+[  1%] Building CXX object CMakeFiles/StarkLOB.dir/src/main.cpp.obj
+mingw32-make[2]: *** [CMakeFiles\StarkLOB.dir\build.make:79: CMakeFiles/StarkLOB.dir/src/main.cpp.obj] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:168: CMakeFiles/StarkLOB.dir/all] Error 2
+mingw32-make: *** [Makefile:100: all] Error 2

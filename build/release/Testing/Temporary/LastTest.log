@@ -1,0 +1,87 @@
+Start testing: Aug 29 06:45 India Standard Time
+----------------------------------------------------------
+1/4 Testing: CoreTests
+1/4 Test: CoreTests
+Command: "C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_tests.exe"
+Directory: C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release
+"CoreTests" start time: Aug 29 06:45 India Standard Time
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1583843202
+--- SPSCRingBuffer Stress Test ---
+Processed 10000000 messages in 0.252 seconds.
+Throughput: 3.96825e+07 orders/sec
+Data race check: passed. Expected sum == Actual sum.
+===============================================================================
+All tests passed (69 assertions in 9 test cases)
+
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"CoreTests" end time: Aug 29 06:45 India Standard Time
+"CoreTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: NetTests
+2/4 Test: NetTests
+Command: "C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_tests.exe"
+Directory: C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release
+"NetTests" start time: Aug 29 06:45 India Standard Time
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2411224413
+--- SPSCRingBuffer Stress Test ---
+Processed 10000000 messages in 0.214 seconds.
+Throughput: 4.6729e+07 orders/sec
+Data race check: passed. Expected sum == Actual sum.
+===============================================================================
+All tests passed (18 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Passed.
+"NetTests" end time: Aug 29 06:45 India Standard Time
+"NetTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: NetIntegrationTests
+3/4 Test: NetIntegrationTests
+Command: "C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_integration_tests.exe"
+Directory: C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release
+"NetIntegrationTests" start time: Aug 29 06:45 India Standard Time
+Output:
+----------------------------------------------------------
+Randomness seeded to: 185226133
+===============================================================================
+All tests passed (4007 assertions in 1 test case)
+
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"NetIntegrationTests" end time: Aug 29 06:45 India Standard Time
+"NetIntegrationTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: WsTests
+4/4 Test: WsTests
+Command: "C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_ws_tests.exe"
+Directory: C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release
+"WsTests" start time: Aug 29 06:45 India Standard Time
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3632905435
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"WsTests" end time: Aug 29 06:45 India Standard Time
+"WsTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 29 06:45 India Standard Time

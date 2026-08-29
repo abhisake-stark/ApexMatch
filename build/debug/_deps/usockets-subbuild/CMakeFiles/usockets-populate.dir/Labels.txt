@@ -1,0 +1,14 @@
+# Target labels
+ usockets-populate
+# Source files and their labels
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/CMakeFiles/usockets-populate
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/CMakeFiles/usockets-populate.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/CMakeFiles/usockets-populate-complete.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-build.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-configure.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-download.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-install.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-mkdir.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-patch.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-test.rule
+C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/debug/_deps/usockets-subbuild/usockets-populate-prefix/src/usockets-populate-stamp/usockets-populate-update.rule

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\StarkLOB.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\StarkLOB.dir/objects.a @CMakeFiles\StarkLOB.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe  -O0 -g -fsanitize=address,undefined -fno-omit-frame-pointer  -fsanitize=address,undefined -Wl,--whole-archive CMakeFiles\StarkLOB.dir/objects.a -Wl,--no-whole-archive -o StarkLOB.exe -Wl,--out-implib,libStarkLOB.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StarkLOB.dir\linkLibs.rsp
