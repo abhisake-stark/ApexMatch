@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_tests-b12d07c_tests.cmake")
-  include("C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_tests-b12d07c_tests.cmake")
-else()
-  add_test(StarkLOB_net_tests_NOT_BUILT-b12d07c StarkLOB_net_tests_NOT_BUILT-b12d07c)
-endif()

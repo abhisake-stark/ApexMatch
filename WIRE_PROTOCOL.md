@@ -1,6 +1,6 @@
-# StarkLOB Binary Wire Protocol
+# ApexMatch Binary Wire Protocol
 
-This document defines the raw binary protocol used by StarkLOB for ingesting HFT orders over TCP.
+This document defines the raw binary protocol used by ApexMatch for ingesting HFT orders over TCP.
 
 All messages must be exactly 22 bytes in length. All multi-byte integer fields (64-bit and 32-bit) must be encoded in **Network Byte Order (Big-Endian)**.
 

@@ -1,5 +1,0 @@
-add_test( [==[SPSCRingBuffer Basic Functionality]==] C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_tests.exe [==[SPSCRingBuffer Basic Functionality]==]  )
-set_tests_properties( [==[SPSCRingBuffer Basic Functionality]==] PROPERTIES WORKING_DIRECTORY C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release)
-add_test( [==[SPSCRingBuffer Concurrency Stress Test]==] C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release/StarkLOB_net_tests.exe [==[SPSCRingBuffer Concurrency Stress Test]==]  )
-set_tests_properties( [==[SPSCRingBuffer Concurrency Stress Test]==] PROPERTIES WORKING_DIRECTORY C:/Users/ABHISHEK/OneDrive/Desktop/StarkLOB/build/release)
-set( StarkLOB_net_tests_TESTS [==[SPSCRingBuffer Basic Functionality]==] [==[SPSCRingBuffer Concurrency Stress Test]==])

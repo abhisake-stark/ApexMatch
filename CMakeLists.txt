@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(StarkLOB VERSION 0.1 LANGUAGES CXX C)
+project(ApexMatch VERSION 0.1 LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -57,58 +57,58 @@ FetchContent_Declare(
 FetchContent_Populate(websocketpp)
 
 # Create the main executable
-add_executable(StarkLOB src/main.cpp src/net/tcp_server.cpp src/ws/broadcaster.cpp)
+add_executable(ApexMatch src/main.cpp src/net/tcp_server.cpp src/ws/broadcaster.cpp)
 
 # Include directories
-target_include_directories(StarkLOB PRIVATE 
+target_include_directories(ApexMatch PRIVATE 
     include 
     ${asio_SOURCE_DIR}/asio/include
     ${websocketpp_SOURCE_DIR}
 )
-target_compile_definitions(StarkLOB PRIVATE ASIO_STANDALONE _WEBSOCKETPP_CPP11_STL_ _WEBSOCKETPP_CPP11_THREAD_)
+target_compile_definitions(ApexMatch PRIVATE ASIO_STANDALONE _WEBSOCKETPP_CPP11_STL_ _WEBSOCKETPP_CPP11_THREAD_)
 
 if(WIN32)
-    target_link_libraries(StarkLOB PRIVATE ws2_32 wsock32)
+    target_link_libraries(ApexMatch PRIVATE ws2_32 wsock32)
 endif()
 
 # Link libraries
-target_link_libraries(StarkLOB PRIVATE 
+target_link_libraries(ApexMatch PRIVATE 
     nlohmann_json::nlohmann_json
 )
 
 # Tests
 enable_testing()
-add_executable(StarkLOB_tests tests/test_order_book.cpp tests/test_spsc_ring_buffer.cpp)
-target_include_directories(StarkLOB_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include ${websocketpp_SOURCE_DIR})
-target_link_libraries(StarkLOB_tests PRIVATE Catch2::Catch2WithMain)
+add_executable(ApexMatch_tests tests/test_order_book.cpp tests/test_spsc_ring_buffer.cpp)
+target_include_directories(ApexMatch_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include ${websocketpp_SOURCE_DIR})
+target_link_libraries(ApexMatch_tests PRIVATE Catch2::Catch2WithMain)
 
-add_executable(StarkLOB_net_tests tests/test_spsc_ring_buffer.cpp)
-target_include_directories(StarkLOB_net_tests PRIVATE include)
-target_link_libraries(StarkLOB_net_tests PRIVATE Catch2::Catch2WithMain)
+add_executable(ApexMatch_net_tests tests/test_spsc_ring_buffer.cpp)
+target_include_directories(ApexMatch_net_tests PRIVATE include)
+target_link_libraries(ApexMatch_net_tests PRIVATE Catch2::Catch2WithMain)
 
-add_executable(StarkLOB_net_integration_tests tests/test_tcp_server.cpp src/net/tcp_server.cpp)
-target_include_directories(StarkLOB_net_integration_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include)
-target_compile_definitions(StarkLOB_net_integration_tests PRIVATE ASIO_STANDALONE)
-target_link_libraries(StarkLOB_net_integration_tests PRIVATE Catch2::Catch2WithMain)
+add_executable(ApexMatch_net_integration_tests tests/test_tcp_server.cpp src/net/tcp_server.cpp)
+target_include_directories(ApexMatch_net_integration_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include)
+target_compile_definitions(ApexMatch_net_integration_tests PRIVATE ASIO_STANDALONE)
+target_link_libraries(ApexMatch_net_integration_tests PRIVATE Catch2::Catch2WithMain)
 if(WIN32)
-    target_link_libraries(StarkLOB_net_integration_tests PRIVATE ws2_32 wsock32)
+    target_link_libraries(ApexMatch_net_integration_tests PRIVATE ws2_32 wsock32)
 endif()
 
 include(Catch)
 # WS Tests target
-add_executable(StarkLOB_ws_tests tests/test_ws_broadcaster.cpp src/ws/broadcaster.cpp)
-target_include_directories(StarkLOB_ws_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include ${websocketpp_SOURCE_DIR})
-target_compile_definitions(StarkLOB_ws_tests PRIVATE ASIO_STANDALONE _WEBSOCKETPP_CPP11_STL_ _WEBSOCKETPP_CPP11_THREAD_)
-target_link_libraries(StarkLOB_ws_tests PRIVATE Catch2::Catch2WithMain nlohmann_json::nlohmann_json)
+add_executable(ApexMatch_ws_tests tests/test_ws_broadcaster.cpp src/ws/broadcaster.cpp)
+target_include_directories(ApexMatch_ws_tests PRIVATE include ${asio_SOURCE_DIR}/asio/include ${websocketpp_SOURCE_DIR})
+target_compile_definitions(ApexMatch_ws_tests PRIVATE ASIO_STANDALONE _WEBSOCKETPP_CPP11_STL_ _WEBSOCKETPP_CPP11_THREAD_)
+target_link_libraries(ApexMatch_ws_tests PRIVATE Catch2::Catch2WithMain nlohmann_json::nlohmann_json)
 if(WIN32)
-    target_link_libraries(StarkLOB_ws_tests PRIVATE ws2_32 wsock32)
+    target_link_libraries(ApexMatch_ws_tests PRIVATE ws2_32 wsock32)
 endif()
 
-add_test(NAME CoreTests COMMAND StarkLOB_tests)
-add_test(NAME NetTests COMMAND StarkLOB_net_tests)
-add_test(NAME NetIntegrationTests COMMAND StarkLOB_net_integration_tests)
-add_test(NAME WsTests COMMAND StarkLOB_ws_tests)
+add_test(NAME CoreTests COMMAND ApexMatch_tests)
+add_test(NAME NetTests COMMAND ApexMatch_net_tests)
+add_test(NAME NetIntegrationTests COMMAND ApexMatch_net_integration_tests)
+add_test(NAME WsTests COMMAND ApexMatch_ws_tests)
 
 # Benchmark
-add_executable(StarkLOB_benchmark tests/benchmark_order_book.cpp)
-target_include_directories(StarkLOB_benchmark PRIVATE include)
+add_executable(ApexMatch_benchmark tests/benchmark_order_book.cpp)
+target_include_directories(ApexMatch_benchmark PRIVATE include)

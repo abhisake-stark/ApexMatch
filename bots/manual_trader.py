@@ -7,13 +7,13 @@ async def async_input(prompt):
     return await loop.run_in_executor(None, input, prompt)
 
 async def main():
-    parser = argparse.ArgumentParser(description="Manual Trader Terminal for StarkLOB")
+    parser = argparse.ArgumentParser(description="Manual Trader Terminal for ApexMatch")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=9001)
     args = parser.parse_args()
 
     print("==========================================")
-    print("🚀 StarkLOB Manual Trader Terminal")
+    print("🚀 ApexMatch Manual Trader Terminal")
     print("==========================================")
     print("Commands:")
     print("  b <qty> <price>   -> Buy Limit Order  (e.g., 'b 10 9900')")

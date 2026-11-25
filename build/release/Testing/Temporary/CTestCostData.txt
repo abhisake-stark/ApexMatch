@@ -1,5 +1,0 @@
-CoreTests 1 0.430077
-NetTests 1 0.312143
-NetIntegrationTests 1 0.283029
-WsTests 1 0.392745
----

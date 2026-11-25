@@ -1,6 +1,6 @@
-# StarkLOB Interview Prep & Architecture Guide
+# ApexMatch Interview Prep & Architecture Guide
 
-This document breaks down the *actual* implementation of the StarkLOB engine in the current workspace, providing a brutally honest guide to surviving a technical deep-dive into the codebase.
+This document breaks down the *actual* implementation of the ApexMatch engine in the current workspace, providing a brutally honest guide to surviving a technical deep-dive into the codebase.
 
 ---
 

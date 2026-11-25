@@ -1,4 +1,4 @@
-# StarkLOB ⚡
+# ApexMatch ⚡
 
 > **A high-performance, lock-free C++20 Limit Order Book engine designed for microsecond latency.**
 
@@ -6,7 +6,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-StarkLOB is a bespoke trading engine demonstrating modern C++ low-latency techniques. It avoids dynamic allocation on the critical path, utilizes intrusive lock-free concurrency structures, and streams real-time market data to a React frontend.
+ApexMatch is a bespoke trading engine demonstrating modern C++ low-latency techniques. It avoids dynamic allocation on the critical path, utilizes intrusive lock-free concurrency structures, and streams real-time market data to a React frontend.
 
 ## 🏗 Architecture Overview
 
@@ -76,7 +76,7 @@ cmake --build build/release
 ### 2. Run the Engine
 ```powershell
 # Start the engine (listens on TCP 9001, WS 9002)
-build\release\StarkLOB.exe
+build\release\ApexMatch.exe
 ```
 
 ### 3. Start the Frontend
@@ -98,7 +98,7 @@ python bots/orchestrator.py --duration 120 --makers 5 --takers 2
 
 ## 📂 Project Structure
 ```text
-StarkLOB/
+ApexMatch/
 ├── bots/                   # Python asyncio traffic simulators
 ├── frontend/               # Vite + React + TS dashboard
 ├── include/hft/

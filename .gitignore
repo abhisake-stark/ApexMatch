@@ -1,0 +1,32 @@
+# C++ Build Artifacts
+build/
+bin/
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.env
+
+# Frontend / Node
+frontend/node_modules/
+frontend/dist/
+
+# Logs & temp files
+*.log
+error.txt
+output.txt
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

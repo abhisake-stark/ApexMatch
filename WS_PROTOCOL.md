@@ -1,4 +1,4 @@
-# StarkLOB WebSocket Protocol
+# ApexMatch WebSocket Protocol
 
 The WebSocket API broadcasts JSON messages from the matching engine to the frontend clients. Messages fall into two categories: Periodic Order Book Snapshots and Real-Time Trade Events.
 

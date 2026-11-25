@@ -54,7 +54,7 @@ void signal_handler(int signum) {
 }
 
 int main() {
-    std::cout << "StarkLOB v0.1 - Starting up...\n";
+    std::cout << "ApexMatch v0.1 - Starting up...\n";
 
     // Register signal handler
     std::signal(SIGINT, signal_handler);
@@ -226,6 +226,6 @@ int main() {
     std::cerr << "[MAIN] Waiting for threads to join...\n";
     // jthreads will automatically request stop and join on destruction
 
-    std::cout << "StarkLOB shutdown complete.\n";
+    std::cout << "ApexMatch shutdown complete.\n";
     return 0;
 }

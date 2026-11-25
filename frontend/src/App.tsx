@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="dashboard-container">
       <div className="header">
-        <h2>StarkLOB Dashboard</h2>
+        <h2>ApexMatch Dashboard</h2>
         <div className="connection-indicator">
           <div className={`dot ${status}`}></div>
           <span style={{ textTransform: 'capitalize' }}>{status}</span>
